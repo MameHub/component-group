@@ -1,3 +1,58 @@
+.blanco{
+  color: #ffffff;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.negro{
+  color: #000000;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.dorado{
+  color: #FFD700;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.gris-texto{
+  color: #333333;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.azul-texto{
+  color: #00BFFF;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.azul{
+  background-color: #001F3F;
+}
+
+.verde{
+  background-color: #2ECC71;
+}
+
+.naranja{
+  background-color: #FF851B;
+}
+
+.morado{
+  background-color: #6F42C1;
+}
+
+.gris{
+  background-color: #D3D3D3;
+}
+
+h2,h4{
+  padding-left: 2%;
+  text-align: center;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -10,33 +65,148 @@
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+/* Contenedor de componentes */
+.componentes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Componente Cliqueando */
+
+.rojo {
+  background-color: rgb(228, 80, 80);
+}
+
+.amarillo {
+  background-color: rgb(238, 238, 98);
+  color: black;
+}
+
+.verde {
+  background-color: rgb(94, 216, 94);
+  color: black;
+}
+
+.cliqueandoClass {
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  min-width: 200px;
+  max-width: 400px;
+  font-weight: bold;
+}
+
+.cliqueandoClass button {
+  background-color: #afe6f0;
+  color: black;
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  border: none;
+  transition-duration: 0.2s;
+}
+
+.cliqueandoClass button:hover {
+  background-color: #d7f9ff;
+}
+
+.cliqueandoClass p {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Componente DespliegueEnViernes */
+.despliegueviernes {
+  resize: none;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 75px;
+  max-height: 75px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.rojoDespliegueViernes {
+  background-color: rgb(228, 80, 80);
+  color: white;
+  resize: none;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 75px;
+  max-height: 75px;
+}
+
+/* Componente ImagenCiudad */
+.imagenCiudad {
+  border-radius: 1em;
+  max-height: 200px;
+}
+
+.tarjeta{
+  padding: 1em;
+  border-radius: 1em;
+  width: 30%;
+  background-color: #ffcccb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+}
+
+#despliegueViernesEnlace {
+  text-decoration: none;
+  color: #005f73;
+  transition-duration: 0.5s;
+}
+
+#despliegueViernesEnlace:hover {
+  text-decoration: underline;
+}
+
+.btnOn {
+  width: 30%;
+  background-color: green;
+  color: white;
+  padding: "10px 20px";
+  border: "none";
+  border-radius: "5px";
+  cursor: "pointer";
+}
+
+.btnOff {
+  width: 30%;
+  background-color: red;
+  color: "white";
+  padding: "10px 20px";
+  border: "none";
+  border-radius: "5px";
+  cursor: "pointer";
+}
+
+.destinoSelect{
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1em;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 3%;
+}
+
+.destinoSelect:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
